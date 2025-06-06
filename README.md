@@ -5,7 +5,7 @@ This interactive Streamlit app predicts the **severity of road accidents** using
 
 ## 🎯 Project Objective
 
-To assist UK emergency services by predicting the **severity level** of a road accident — `Fatal`, `Serious`, or `Slight` — using environmental and driver-related features. The app uses a trained **Keras neural network model**, compares it with traditional ML models, and allows real-time prediction and explanations.
+To assist emergency services by predicting the **severity level** of a road accident — `Fatal`, `Serious`, or `Slight` — using environmental and driver-related features. The app uses a trained **Keras neural network model and Random Forest**, compares it with traditional ML models, and allows real-time prediction and explanations.
 
 ---
 
@@ -13,7 +13,7 @@ To assist UK emergency services by predicting the **severity level** of a road a
 
 - ✅ Predict accident severity using form inputs
 - 🧠 Uses a trained **Keras model and Random Forest Model** for inference
-- 💬 AI Chat Assistant powered by **Gemini** to answer user queries
+- 💬 AI Chat Assistant to answer user queries
 - 🧮 Input preprocessing using **LabelEncoders** and **Scalers**
 - 📈 Clean, intuitive Streamlit UI
 
@@ -25,7 +25,7 @@ To assist UK emergency services by predicting the **severity level** of a road a
 - **Backend**: Keras (TensorFlow)
 - **AI Chat**: Custom (Comming soon -> Gemini (Google Generative AI))
 - **Language**: Python 3.9+
-- **Libraries**: `streamlit`, `tensorflow`, `scikit-learn`,`pandas`, `numpy`, `google.generativeai`
+- **Libraries**: `streamlit`, `tensorflow`, `scikit-learn`,`pandas`,`plotly`, `numpy`, `google.generativeai`
 
 ---
 
