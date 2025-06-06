@@ -1,6 +1,8 @@
 import streamlit as st
 import pickle
 import numpy as np
+import plotly.express as px
+
 
 st.title("🚗 Accident Severity Predictor")
 
@@ -136,6 +138,16 @@ elif page == "🤖 Compare Models":
         "F1-Score": [0.80, 0.82, 0.87],
     }
     st.dataframe(model_results)
+
+        # Pie Chart for Accuracy
+    fig = px.pie(
+        model_results,
+        values='Accuracy',
+        names='Model',
+        title='📊 Model Accuracy Comparison',
+        hole=0.4  # for donut style
+    )
+    st.plotly_chart(fig)
 
 
 elif page == "💬 Chat Assistant":
